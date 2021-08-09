@@ -7,12 +7,14 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import base.BaseClass;
 //import junit.framework.Assert;
+
 
 public class PVHomePage extends BaseClass {
 	
@@ -63,7 +65,8 @@ public class PVHomePage extends BaseClass {
 		String actualservicetabtitle=driver.getTitle();
 		String expectedservicetabtitle="Homeowners Association Management Company in Redmond | Community Association Management";
 		System.out.println(actualservicetabtitle);
-	//Assert.assertEquals(expectedservicetabtitle, actualservicetabtitle, actualservicetabtitle);
+Assert.assertEquals(expectedservicetabtitle, actualservicetabtitle);
+	
 	System.out.println("Successfully landed on service page");
 	
 	Thread.sleep(4000);
@@ -76,7 +79,7 @@ public class PVHomePage extends BaseClass {
 		String actualWhyPropVivoTabtitle=driver.getTitle();
 		String expectedWhyPropVivoTabtitle="Homeowners Association Management Company in Bellevue | Community Association Management";
 		System.out.println(actualWhyPropVivoTabtitle);
-	//Assert.assertEquals("scnd assert", expectedWhyPropVivoTabtitle, actual, delta);(expected, actual, delta);(expectedWhyPropVivoTabtitle, actualWhyPropVivoTabtitle);
+	Assert.assertEquals("scnd assert", expectedWhyPropVivoTabtitle,actualWhyPropVivoTabtitle);
 	System.out.println("Successfully landed on WhyPropVivo page");
 	
 	Thread.sleep(4000);
@@ -89,7 +92,7 @@ public class PVHomePage extends BaseClass {
 		String actualRequestForProposalTabtitle=driver.getTitle();
 		String expectedRequestForProposalTabtitle="Homeowners Association Management Company in Seattle Area | Community Association Management";
 		System.out.println(actualRequestForProposalTabtitle);
-	//Assert.assertEquals(expectedRequestForProposalTabtitle, actualRequestForProposalTabtitle);
+	Assert.assertEquals(expectedRequestForProposalTabtitle, actualRequestForProposalTabtitle);
 	System.out.println("Successfully landed on RequestForProposal page");
 		Thread.sleep(4000);
 	}
@@ -103,7 +106,7 @@ public class PVHomePage extends BaseClass {
 		String actualRealEstateDocumentTabtitle=driver.getTitle();
 		String expectedRealEstateDocumentTabtitle="Communnity Association Management Company in Redmond | HOA Management";
 		System.out.println(actualRealEstateDocumentTabtitle);
-	//Assert.assertEquals(expectedRealEstateDocumentTabtitle, actualRealEstateDocumentTabtitle);
+	Assert.assertEquals(expectedRealEstateDocumentTabtitle, actualRealEstateDocumentTabtitle);
 	System.out.println("Successfully landed on ResaleCertificate page of RealEstateDocument ");
 	
 	Thread.sleep(4000);
@@ -116,7 +119,7 @@ public class PVHomePage extends BaseClass {
 		String actualBlogTabtitle=driver.getTitle();
 		String expectedBlogTabtitle="Condo Association Management Company in Redmond | Community Association Management";
 		System.out.println(actualBlogTabtitle);
-	//Assert.assertEquals(expectedBlogTabtitle, actualBlogTabtitle);
+	Assert.assertEquals(expectedBlogTabtitle, actualBlogTabtitle);
 	System.out.println("Successfully landed on Blog page");
 	
 	Thread.sleep(4000);
@@ -129,7 +132,7 @@ public class PVHomePage extends BaseClass {
 		String actualContactUsTabtitle=driver.getTitle();
 		String expectedContactUsTabtitle="Condo Association Management Company in Bellevue | Property Management Company";
 		System.out.println(actualContactUsTabtitle);
-	//Assert.assertEquals(expectedContactUsTabtitle, actualContactUsTabtitle);
+	Assert.assertEquals(expectedContactUsTabtitle, actualContactUsTabtitle);
 	System.out.println("Successfully landed on Contact Us page");
 	
 	Thread.sleep(4000);
