@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-			features="E:/selenium/Rijul/src/test/java/features/PropVivoLogin.feature",
+			features="E:/selenium/Riju/Rijul/src/test/java/features/PropVivoLogin.feature",
 			glue= {"stepDefinition"},
 			
 					
